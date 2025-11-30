@@ -1,0 +1,941 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gabriela&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.ogo-text {
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.home_Section {
+  height: 100vh;
+}
+
+.home_Container {
+  background: url(/src/assets/home_background.png);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 2rem;
+}
+
+.nav_Container {
+  padding-top: 2rem;
+  display: flex;
+}
+
+.navbar-brand {
+  margin-right: auto;
+}
+
+.logo-text {
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+  color: #ff6b35;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-Text {
+  margin-left: auto;
+}
+
+.nav-Text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: end;
+}
+
+.nav-Text p h4 {
+  font-weight: 700;
+}
+
+a.nav-link {
+  color: #3a3a3a;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.home_ContentText {
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.home_ContentText h3 {
+  font-family: "Pacifico", cursive;
+  font-size: clamp(1.5rem, 3vw, 3rem);
+}
+
+.home_ContentText h1 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: clamp(2rem, 5vw, 5rem);
+}
+
+.home_ContentText h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.home_ContentText span {
+  font-family: "Fredericka the Great", cursive;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+.strateLine {
+  height: 1px;
+  width: min(28rem, 80vw);
+  background: black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.home_ContentImg {
+  top: 0rem;
+  z-index: 0;
+  position: absolute;
+  max-width: 1250px;
+  right: 0;
+}
+
+.dropDown {
+  cursor: pointer;
+  position: fixed;
+  left: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .home_Content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+
+  .home_ContentText {
+    flex: 1;
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .home_ContentImg {
+    flex: 1;
+    position: relative;
+    text-align: right;
+    top: auto;
+  }
+
+  .nav_Container {
+    padding-top: 1rem;
+  }
+
+  .home_ContentText {
+    margin-top: 2rem;
+  }
+}
+
+#show_Nav {
+  transform: none;
+}
+
+/*******************************MENU SECTION**************************************/
+.menu {
+  height: auto;
+  padding: 2rem 0;
+}
+
+.menu_Content {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.menu_Title h1 {
+  font-family: "Fredericka the Great", cursive;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.menu_Title p {
+  font-family: "Montserrat", sans-serif;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+}
+
+.item_Container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+
+.items {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.items:hover {
+  transform: translateY(-5px);
+}
+
+.item_Img {
+  text-align: center;
+  padding: 1rem;
+}
+
+.item_Img img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+.item_Details {
+  padding: 1rem;
+  text-align: center;
+}
+
+.item_Title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.item_Details p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  max-width: none;
+  letter-spacing: normal;
+}
+
+.item_Price {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #ff6b35;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.order_Btn {
+  background: #f1d603;
+  width: 80%;
+  max-width: 150px;
+  margin: 1rem auto 0;
+  padding: 0.7rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.order_Btn:hover {
+  scale: 1.05;
+  background: #e6c803;
+}
+
+/*******************************DISCOVER EVENT SECTION**************************************/
+.event_Container {
+  text-align: center;
+}
+
+.event_Title span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.event_Title span h1 {
+  font-family: "Fredericka the Great", cursive;
+}
+
+.event_Title p {
+  max-width: 65%;
+  margin: auto;
+}
+
+.food_Collage {
+  max-width: 90%;
+  margin: auto;
+}
+
+img.tryout {
+  margin-bottom: 2.4rem;
+}
+
+/*******************************RESERVATION SECTION**************************************/
+.book_Container {
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
+}
+
+.booking_Title h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.booking_Title h1 {
+  font-family: "Fredericka the Great", cursive;
+}
+
+.from {
+  max-width: 50%;
+  margin: auto;
+}
+
+.form_Input {
+  display: grid;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+}
+
+.fa_Table {
+  background: #f1d603;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.fa_Table:hover {
+  scale: 1.1;
+}
+
+.form_Input input {
+  margin: 10px;
+  padding: 10px;
+  background: white;
+  color: black;
+  outline: none;
+  border: 1px solid gray;
+}
+
+/*******************************FOOTER SECTION**************************************/
+.footer_Container {
+  background: url(./assets/footerBg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer_Cotent {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer_Text p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer_Text {
+  padding: 2rem;
+}
+
+.footer_Logo {
+  padding: 2rem;
+}
+
+.trade_Mark {
+  color: white;
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contaCt {
+  display: grid;
+  color: white;
+  justify-content: center;
+  position: relative;
+  font-size: larger;
+}
+
+.contaCt span {
+  margin-bottom: 1rem;
+  text-align: start;
+  font-size: 1.3rem;
+}
+
+.contaCt span i {
+  margin-right: 2rem;
+  color: #f1d603;
+}
+
+.social {
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.social i {
+  font-size: 2rem;
+  padding: 1px 3px 10px 30px;
+  color: #f1d603;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.social i:hover {
+  scale: 1.1;
+}
+
+@media screen and (min-width: 320px) {
+  .home_Section {
+    height: auto;
+  }
+
+  .nav_Logo {
+    width: 7rem;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .dropDown {
+    width: 3rem;
+  }
+
+  .home_ContentText {
+    width: 100%;
+  }
+
+  .navbar-brand {
+    margin-left: 1rem;
+  }
+
+  .nav-Text {
+    margin-right: 1rem;
+  }
+
+  ul.nav {
+    text-align: center;
+    display: block;
+    top: 0;
+    transform: translateY(-100vh);
+    line-height: 7rem;
+    position: absolute;
+    backdrop-filter: blur(1px);
+    width: 75%;
+    left: 55px;
+    border-radius: 0px 10px 0px 10px;
+    background: #fffdf0d1;
+    transition: all 0.5s ease-in;
+  }
+
+  .strateLine {
+    width: 15rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .home_ContentImg {
+    display: none;
+  }
+
+  img.homeFood2 {
+    display: block;
+    margin: auto;
+  }
+
+  /*******************************MENU SECTION**************************************/
+  .menu {
+    height: auto;
+  }
+
+  .order_Btn {
+    width: 80%;
+  }
+
+  img.tryout {
+    margin-bottom: 0.4rem;
+    max-width: 110%;
+  }
+
+  /*******************************RESERVATION SECTION**************************************/
+  .from {
+    max-width: 85%;
+    margin: auto;
+  }
+
+  .from_Row {
+    display: block;
+  }
+
+  /*******************************FOOTER SECTION**************************************/
+  img.footerLogo {
+    width: 15rem;
+  }
+
+  .footer_Row {
+    display: grid;
+    width: 100%;
+  }
+
+  .footer_Cotent {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .row.footer_Row .col-6 {
+    width: 100%;
+  }
+
+  .trade_Mark {
+    position: relative;
+    top: 9rem;
+    padding-left: 2rem;
+  }
+
+  .contaCt {
+    top: -8rem;
+  }
+
+  .social {
+    top: -6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home_ContentText {
+    width: 100%;
+  }
+
+  .homeFood2 {
+    display: block;
+    margin: auto;
+  }
+
+  .navbar-brand {
+    margin-left: 3rem;
+  }
+
+  .nav-Text {
+    margin-right: 3rem;
+  }
+
+  /*******************************MENU SECTION**************************************/
+  .order_Btn {
+    width: 80%;
+  }
+
+  /*******************************DISCOVER EVENT SECTION**************************************/
+  .food_Collage {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  /*******************************FOOTER SECTION**************************************/
+  .footer_Cotent {
+    max-width: 90%;
+  }
+
+  .row.footer_Row {
+    display: flex;
+  }
+
+  .row.footer_Row .col-6 {
+    width: 50%;
+  }
+
+  .trade_Mark {
+    position: unset;
+  }
+
+  .contaCt {
+    top: 14rem;
+  }
+
+  .social {
+    top: 20rem;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home_Container {
+    height: 80%;
+  }
+
+  .dropDown {
+    display: none;
+  }
+
+  ul.nav {
+    transform: translateY(12vh);
+    display: flex;
+    background-color: transparent;
+    z-index: 1;
+    justify-content: flex-end;
+    line-height: normal;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    margin-left: 11rem;
+  }
+
+  .home_ContentText {
+    width: 56%;
+  }
+
+  .home_ContentImg {
+    display: block;
+  }
+
+  img.homeFood2 {
+    display: none;
+  }
+
+  .item_Container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  /*******************************MENU SECTION**************************************/
+  .menu {
+    height: auto;
+  }
+
+  .order_Btn {
+    width: 80%;
+  }
+
+  /*******************************RESERVATION SECTION**************************************/
+  .from {
+    max-width: 50%;
+    margin: auto;
+  }
+
+  .from_Row {
+    display: flex;
+  }
+
+  /*******************************FOOTER SECTION**************************************/
+  .footer_Cotent {
+    max-width: 90%;
+    padding: 3rem;
+  }
+
+  .social {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .home_Container {
+    height: 100vh;
+  }
+
+  .nav_Logo {
+    width: 10rem;
+  }
+
+  .logo-text {
+    font-size: 2.5rem;
+  }
+
+  ul.nav {
+    transform: translateY(12vh);
+    margin-left: 16rem;
+  }
+
+  /*******************************DISCOVER EVENT SECTION**************************************/
+  img.tryout {
+    margin-bottom: 2.3rem;
+    max-width: 110%;
+  }
+
+  /*******************************RESERVATION SECTION**************************************/
+  .from {
+    max-width: 45%;
+  }
+
+  /*******************************FOOTER SECTION**************************************/
+  .footer {
+    margin-bottom: -2rem;
+  }
+}
+
+/* Login Styles */
+.login-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/src/assets/home_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #ff6b35;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #e55a2b;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Food Page Styles */
+.food-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.food-container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  color: #ff6b35;
+}
+
+.food-container .form-group {
+  margin-bottom: 1rem;
+}
+
+.food-container .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.food-container .form-group input,
+.food-container .form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.food-container .form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #ff6b35;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #e55a2b;
+}
+
+.message {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: green;
+}
+
+/* Cart Styles */
+.cart-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #ff6b35;
+}
+
+.cart-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.cart-items {
+  flex: 2;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  gap: 1rem;
+}
+
+.cart-item-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-details h3 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.cart-item-details p {
+  margin: 0.5rem 0;
+  color: #ff6b35;
+  font-weight: bold;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.quantity-controls button {
+  background: #ff6b35;
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.quantity-controls span {
+  font-weight: bold;
+  min-width: 30px;
+  text-align: center;
+}
+
+.remove-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.remove-btn:hover {
+  background: #c82333;
+}
+
+.cart-summary {
+  flex: 1;
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.cart-summary h2 {
+  color: #ff6b35;
+  margin-bottom: 1rem;
+}
+
+.payment-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.payment-btn:hover {
+  background: #218838;
+}
