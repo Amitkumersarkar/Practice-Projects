@@ -11,6 +11,8 @@ import UpdateTea from './components/UpdateTea';
 import TeaCard from './Pages/TeaCard';
 import TeaDetails from './Pages/TeaDetails';
 import AddTea from "./components/AddTea"
+import SignIn from './Auth/SignIn';
+import SignUp from './Auth/SignUp';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -37,6 +39,14 @@ const router = createBrowserRouter([
       {
         path: 'tea/:id',
         Component: TeaDetails
+      },
+      {
+        path: 'signIn',
+        Component: SignIn
+      },
+      {
+        path: 'signUp',
+        Component: SignUp
       }
     ]
   },
