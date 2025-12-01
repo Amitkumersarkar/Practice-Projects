@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const UpdateTea = () => {
@@ -34,6 +34,9 @@ const UpdateTea = () => {
     }
     return (
         <div>
+            <Link to='/'>
+                <button className="btn btn-info">Home</button>
+            </Link>
             <h2 className="text-center font-bold text-4xl my-5">update tea</h2>
             <form onSubmit={handleUpdateTea}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

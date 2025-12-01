@@ -7,11 +7,10 @@ import {
 } from "react-router-dom";
 import Root from './Layouts/Root';
 import Home from './components/Home';
-import AddTea from './components/AddTea';
 import UpdateTea from './components/UpdateTea';
 import TeaCard from './Pages/TeaCard';
 import TeaDetails from './Pages/TeaDetails';
-
+import AddTea from "./components/AddTea"
 const router = createBrowserRouter([
   {
     path: "/",

@@ -42,9 +42,8 @@ const TeaCard = ({ tea, teas, setTeas }) => {
     }
 
     return (
-        <div className="card lg:card-side bg-base-100 shadow-md border rounded-xl overflow-hidden">
 
-            {/* Image */}
+        <div className="card lg:card-side bg-base-100 shadow-md border rounded-xl overflow-hidden">
             <figure className="w-full lg:w-1/3 h-56 lg:h-auto">
                 <img
                     src={photo}
@@ -53,7 +52,6 @@ const TeaCard = ({ tea, teas, setTeas }) => {
                 />
             </figure>
 
-            {/* Content */}
             <div className="card-body">
 
                 <h2 className="card-title text-xl font-semibold">Name: {name}</h2>
@@ -63,7 +61,6 @@ const TeaCard = ({ tea, teas, setTeas }) => {
                 <p>Taste: {taste}</p>
                 <p className="text-gray-600 text-sm">{details}</p>
 
-                {/* Buttons */}
                 <div className="flex gap-3 justify-end mt-4 flex-wrap">
 
                     <Link to={`/tea/${_id}`}>
