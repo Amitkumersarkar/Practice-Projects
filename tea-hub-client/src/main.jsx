@@ -13,6 +13,7 @@ import TeaDetails from './Pages/TeaDetails';
 import AddTea from "./components/AddTea"
 import SignIn from './Auth/SignIn';
 import SignUp from './Auth/SignUp';
+import AuthProvider from './Context/AuthProvider';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -54,6 +55,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>,
 )

@@ -5,7 +5,6 @@ import { Coffee, Mail } from "lucide-react";
 const SignIn = () => {
     const [message, setMessage] = useState("");
     const [loading, setLoading] = useState(false);
-
     const handleSignIn = (e) => {
         e.preventDefault();
         setLoading(true);
