@@ -26,7 +26,7 @@ const SignIn = () => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br` from-cyan-50 via-white to-cyan-100">
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-cyan-50 via-white to-cyan-100">
             <div className="card w-full max-w-md bg-white shadow-2xl rounded-2xl p-6">
 
                 <div className="text-center mb-6">
@@ -94,7 +94,7 @@ const SignIn = () => {
 
                 {/* Divider */}
                 <div className="my-4 flex items-center">
-                    <div className="flex-grow` h-px bg-gray-300"></div>
+                    <div className="flex-grow h-px bg-gray-300"></div>
                     <span className="mx-2 text-gray-400 text-sm">or</span>
                     <div className="flex-grow` h-px bg-gray-300"></div>
                 </div>
@@ -110,7 +110,7 @@ const SignIn = () => {
 
                 <p className="text-center mt-4 text-sm text-gray-600">
                     Don’t have an account?{" "}
-                    <Link to="/signIn" className="text-cyan-700 font-semibold hover:underline">
+                    <Link to="/signUp" className="text-cyan-700 font-semibold hover:underline">
                         Sign Up
                     </Link>
                 </p>
