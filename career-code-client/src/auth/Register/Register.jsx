@@ -4,7 +4,12 @@ import loginLottie from "../../assets/Login.json";
 const Register = () => {
     const handleRegister = (e) => {
         e.preventDefault()
-
+        const form = e.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        const newForm = { email, password };
+        console.log(newForm);
+        form.reset();
     }
     return (
         <div className="hero bg-base-200 min-h-screen">
