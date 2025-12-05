@@ -4,7 +4,7 @@ import { use } from "react";
 import { AuthContext } from "../../contextApi/AuthContext/AuthContext";
 const SignIn = () => {
 
-    const { createUser } = use(AuthContext);
+    const { signInUser } = use(AuthContext);
 
     const handleSignIn = (e) => {
         e.preventDefault();
@@ -15,6 +15,14 @@ const SignIn = () => {
         const newUser = { email, password };
         console.log(newUser)
 
+        // signIn user
+        signInUser(email, password)
+            .then(result => {
+                console.log(result)
+            })
+            .catch(error => {
+                console.log(error)
+            });
     }
     return (
         <div className="hero bg-base-200 min-h-screen">
