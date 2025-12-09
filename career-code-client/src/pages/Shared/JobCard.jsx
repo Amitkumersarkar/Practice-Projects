@@ -4,9 +4,18 @@ const JobCard = ({ jobs }) => {
     return (
         <div className="card bg-base-100 shadow-sm">
             <figure>
-                <img
-                    src={company_logo}
-                    alt="Shoes" />
+                <div className="flex text-center gap-3 my-2">
+                    <div>
+                        <img
+                            className="w-15"
+                            src={company_logo}
+                            alt="Shoes" />
+                    </div>
+                    <div>
+                        {company}
+                        <p>{location}</p>
+                    </div>
+                </div>
             </figure>
             <div className="card-body">
                 <h2 className="card-title">
@@ -15,8 +24,11 @@ const JobCard = ({ jobs }) => {
                 </h2>
                 <p>{description}</p>
                 <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
+                    {
+                        requirements.map((skills, idx) => <div className="badge badge-outline" key={idx}>{skills}</div>)
+                    }
+                    <div className="badge badge-outline">{category}</div>
+                    {/* <div className="badge badge-outline">Products</div> */}
                 </div>
             </div>
         </div>
