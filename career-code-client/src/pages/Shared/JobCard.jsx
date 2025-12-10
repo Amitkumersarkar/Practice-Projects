@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 
 const JobCard = ({ jobs }) => {
     const { title, _id, location, jobType, company_logo, category, applicationDeadline, salaryRange, description, company, requirements } = jobs;
@@ -30,6 +31,11 @@ const JobCard = ({ jobs }) => {
                     <div className="badge badge-outline">{category}</div>
                     {/* <div className="badge badge-outline">Products</div> */}
                 </div>
+            </div>
+            <div className="flex justify-center my-4">
+                <NavLink to={`/jobs/${jobs._id}`}>
+                    <button className="btn btn-primary w-30">Show Details</button>
+                </NavLink>
             </div>
         </div>
     );
