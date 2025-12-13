@@ -47,6 +47,21 @@ async function run() {
             res.send(result)
         })
 
+        // job application related apis
+        app.post('/application', async (req, res) => {
+            const application = req.body;
+            const result = await applicationCollection.insertOne(application);
+            res.send(result)
+        })
+
+        app.get('/application', async (req, res) => {
+            const email = req.query.email;
+            const query = {
+                applicant: email
+            }
+            const result = await applicationCollection.find(query).toArray();
+            res.send(result);
+        })
 
         await client.db("admin").command({ ping: 1 });
         console.log("Pinged your deployment. You successfully connected to MongoDB!");
