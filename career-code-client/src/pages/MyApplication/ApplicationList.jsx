@@ -166,7 +166,7 @@ const ApplicationList = () => {
                             </tr>
                         </tbody>
                         {/* foot */}
-                        <tfoot>
+                        {/* <tfoot>
                             <tr>
                                 <th></th>
                                 <th>Name</th>
@@ -174,7 +174,7 @@ const ApplicationList = () => {
                                 <th>Favorite Color</th>
                                 <th></th>
                             </tr>
-                        </tfoot>
+                        </tfoot> */}
                     </table>
                 </div>
             </h2>
