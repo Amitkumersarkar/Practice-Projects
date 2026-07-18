@@ -4,13 +4,16 @@ function App() {
     <>
       <h1>Hello Developer</h1>
       <Person ></Person>
-      <Device name="Laptop"></Device>
+      <Device name="Laptop" price="50000"></Device>
+      <Device name="Mobile" price="25000"></Device>
+      <Device name="Watch" price="2500"></Device>
     </>
   )
 }
 function Device(props) {
   console.log(props);
-  return <h2>Laptop</h2>
+  return <h2>Device : {props.name} <br /> <p style={{ marginTop: "10px" }}>Price {props.price}</p> </h2>
+
 }
 function Person() {
   const age = 22;
