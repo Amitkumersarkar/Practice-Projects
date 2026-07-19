@@ -1,3 +1,5 @@
+import Todo from "./todo";
+
 function App() {
 
   return (
@@ -7,6 +9,7 @@ function App() {
       <Device name="Laptop" price="50000"></Device>
       <Device name="Mobile" price="25000"></Device>
       <Device name="Watch" price="2500"></Device>
+      <Todo></Todo>
     </>
   )
 }
