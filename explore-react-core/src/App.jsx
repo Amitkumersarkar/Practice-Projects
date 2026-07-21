@@ -1,3 +1,4 @@
+import Batsman from "./Batsman";
 import Counter from "./Counter";
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
   return (
     <div>
       <h1>Hello developer</h1>
+      <Batsman></Batsman>
       <Counter></Counter>
       <button onClick={handleClick} style={{ color: " skyblue", fontSize: "30px" }}>Click Here</button>
       <br />
