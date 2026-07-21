@@ -1,6 +1,9 @@
+import { Suspense } from "react";
 import Batsman from "./Batsman";
 import Counter from "./Counter";
 import Users from "./Users";
+
+const fetchData = () => fetch('')
 
 const App = () => {
   function handleClick() {
@@ -16,7 +19,9 @@ const App = () => {
   return (
     <div>
       <h1>Hello developer</h1>
-      <Users></Users>
+      <Suspense fallback={<h3>Loading....</h3>}>
+        <Users></Users>
+      </Suspense>
       <Batsman></Batsman>
       <Counter></Counter>
       <button onClick={handleClick} style={{ color: " skyblue", fontSize: "30px" }}>Click Here</button>

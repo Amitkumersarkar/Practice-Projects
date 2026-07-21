@@ -8,11 +8,11 @@ const Counter = () => {
         setCount(newCount);
         console.log('add button click');
     }
-    const counterStyle = {
-        border: '2px solid yellow',
-    }
+    // const counterStyle = {
+    //     border: '2px solid yellow',
+    // }
     return (
-        <div style={counterStyle}>
+        <div >
             <h3 >count : {count} </h3>
             <button onClick={handleAdd}>Add</button>
         </div>
