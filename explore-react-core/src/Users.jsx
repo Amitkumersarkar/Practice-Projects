@@ -1,9 +1,11 @@
+import { use } from "react";
 
-const Users = () => {
-
+const Users = ({ fetchUsers }) => {
+    const users = use(fetchUsers);
+    console.log(users);
     return (
         <div>
-            <h3>Users : </h3>
+            <h3>Users : {users.length}</h3>
         </div>
     );
 };

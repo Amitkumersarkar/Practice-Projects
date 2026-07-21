@@ -3,7 +3,9 @@ import Batsman from "./Batsman";
 import Counter from "./Counter";
 import Users from "./Users";
 
-const fetchData = () => fetch('')
+const fetchUsers = fetch('https://jsonplaceholder.typicode.com/users')
+  .then(res => res.json())
+// .then(data => console.log(data))
 
 const App = () => {
   function handleClick() {
@@ -20,7 +22,7 @@ const App = () => {
     <div>
       <h1>Hello developer</h1>
       <Suspense fallback={<h3>Loading....</h3>}>
-        <Users></Users>
+        <Users fetchUsers={fetchUsers}></Users>
       </Suspense>
       <Batsman></Batsman>
       <Counter></Counter>
