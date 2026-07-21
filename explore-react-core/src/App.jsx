@@ -1,3 +1,4 @@
+import Counter from "./Counter";
 
 const App = () => {
   function handleClick() {
@@ -13,6 +14,7 @@ const App = () => {
   return (
     <div>
       <h1>Hello developer</h1>
+      <Counter></Counter>
       <button onClick={handleClick} style={{ color: " skyblue", fontSize: "30px" }}>Click Here</button>
       <br />
       <button onClick={handleClick2} style={{ gap: "200px", marginTop: "10px", color: " skyblue", fontSize: "20px" }}>Click Here</button>
