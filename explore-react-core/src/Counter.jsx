@@ -8,9 +8,6 @@ const Counter = () => {
         setCount(newCount);
         console.log('add button click');
     }
-    // const counterStyle = {
-    //     border: '2px solid yellow',
-    // }
     return (
         <div >
             <h3 >count : {count} </h3>
