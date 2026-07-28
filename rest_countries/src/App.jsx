@@ -1,10 +1,17 @@
+import { Suspense } from "react";
 import Countries from "./components/Countries/Countries";
+
+// loading data
+const countriesPromise = fetch('https://openapi.programming-hero.com/api/all')
+  .then(res => res.json())
 
 const App = () => {
 
   return (
     <div>
-      <Countries></Countries>
+      <Suspense fallback={<p>Countries data loading..</p>}>
+        <Countries></Countries>
+      </Suspense>
     </div>
   );
 };
